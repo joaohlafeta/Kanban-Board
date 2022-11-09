@@ -79,7 +79,7 @@ function Board(props) {
         }
 
 
-        const  finishTaskIds = Array.from(finish.taskIds);
+        const finishTaskIds = Array.from(finish.taskIds);
         finishTaskIds.splice(destination.index, 0, draggableId);
 
         const newFinishColumn = {

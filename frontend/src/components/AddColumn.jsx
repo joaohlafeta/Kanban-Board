@@ -18,17 +18,17 @@ function AddColumn(props) {
         const newColumn = {
             id: newColumnId,
             title: title,
-            taskIds: [], 
-            };
+            taskIds: [],
+        };
 
-            props.setBoard({
-                ...props.board,
-                columns: {
-                    ...props.board.columns,
-                    [newColumnId]: newColumn
-                },
-                columnOrder: newColumnOrder
-            });
+        props.setBoard({
+            ...props.board,
+            columns: {
+                ...props.board.columns,
+                [newColumnId]: newColumn
+            },
+            columnOrder: newColumnOrder
+        });
     }
 
 
@@ -43,4 +43,4 @@ function AddColumn(props) {
         </div>
     )
 }
-    export default AddColumn;
+export default AddColumn;

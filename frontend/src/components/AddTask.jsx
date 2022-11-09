@@ -39,13 +39,13 @@ function AddTask(props) {
         })
     }
 
-    return(
+    return (
         <div>
-        {
-            showNewTaskButton ?
-            <button onClick={() => setShowNewTaskButton(false)}>New</button>:
-            <input type="text" value={value} onChange={e => setValue(e.target.value)} onBlur={handleInputChangeComplete} />
-        }
+            {
+                showNewTaskButton ?
+                    <button onClick={() => setShowNewTaskButton(false)}>New</button> :
+                    <input type="text" value={value} onChange={e => setValue(e.target.value)} onBlur={handleInputChangeComplete} />
+            }
         </div>
     )
 }
